@@ -1,0 +1,34 @@
+@font-face {
+   font-family: Poppins;
+   src: url(Poppins.ttf)
+   format('truetype');
+}
+
+h1 {
+  font-family: Poppins
+}
+
+h2 {
+  font-family: Poppins
+}
+
+h3 {
+  font-family: Poppins
+}
+
+h4 {
+  font-family: Poppins
+}
+
+h5 {
+  font-family: Poppins
+}
+
+h6 {
+  font-family: Poppins
+}
+
+p {
+  font-family: Poppins;
+  
+}
