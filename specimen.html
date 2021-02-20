@@ -7,6 +7,37 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <style>
+    .alert {
+      padding: 20px;
+      background-color: #f44336;
+      color: white;
+    }
+
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .closebtn:hover {
+      color: black;
+    }
+    </style>
+
+
+
+    <div class="alert text">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      <strong>Security - </strong>This site appears to not be secure because the certificate comes from github.io while the page DNS is Namecheap.
+    </div>
+
+
     <p style="font-size: 64px">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890,./;?!@#$%^</p>
     <script src="script.js"></script>
   </body>
