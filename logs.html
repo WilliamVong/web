@@ -1,0 +1,1220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #FFFFFF; font-weight: normal; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi1 { font-weight: bold; }
+.ansi32 { color: #00aa00; }
+.ansi34 { color: #0000aa; }
+.ansi36 { color: #00aaaa; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+Script started on 2021-03-02 20:18:59-05:00 [TERM="xterm-256color" TTY="/dev/pts/11" COLUMNS="230" LINES="66"]
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master</span>$ lcd exnnrtrance
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ sls
+<span class="ansi1 ansi34">cellar</span> <span class="ansi1 ansi34">chapel</span>  logs.txt  scrap  scroll <span class="ansi1 ansi34">vault</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd celalar
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar</span>$ ls
+<span class="ansi1 ansi34">armoury</span>  scroll <span class="ansi1 ansi32">treasure</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar</span>$ ./treasure
+You have found an emerald **amulet**!"
+
+To collect treasure, you must have a variable to hold your inventory.
+
+Create a variable and add your treasure to it like this:
+
+export I=amulet,$I
+
+You can always check your wealth with this command:
+
+echo $I
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar</span>$ claim amulet
+claim: command not found
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar</span>$ claim amulet amuletamuletmuletuletletett       cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master</span>$ ls
+LICENSE  README.md  commands.sh <span class="ansi1 ansi34">entrance</span>  logs.txt
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master</span>$ . commands.sh
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master</span>$ ./commands.sh
+bash: ./commands.sh: Permission denied
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master</span>$ cat commands.sh
+
+#!/bin/bash
+claim() {
+  export I=$1,$I
+}
+hp() {
+  export HP=$1
+}
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master</span>$ clcd entrance
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar</span>$ ls
+<span class="ansi1 ansi34">armoury</span>  scroll <span class="ansi1 ansi32">treasure</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar</span>$ ./treasure
+You have found an emerald **amulet**!"
+
+To collect treasure, you must have a variable to hold your inventory.
+
+Create a variable and add your treasure to it like this:
+
+export I=amulet,$I
+
+You can always check your wealth with this command:
+
+echo $I
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar</span>$ ls claim amulet
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar</span>$ cat scroll
+
+# Illusions are strong here.
+# It is difficult to tell what is a doorway and what is an object.
+#
+# The magic spell you use to look can be augmented.
+#
+# From now on, cast your spell like this:
+#
+# ls -F
+#
+# Directories (the rooms of these catacombs) end with a / symbol.
+#
+# Encounters (programs) end with a * symbol.
+#
+# You can avoid having to type `ls -F` every time by running the
+# following:
+#
+# alias ls='ls -F'
+#
+# This is known as a shell or command alias.  With this alias,
+# typing simply ls by itself will run ls -F. Try it out!
+#
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar</span>$ ls
+<span class="ansi1 ansi34">armoury</span>  scroll <span class="ansi1 ansi32">treasure</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar</span>$ cd armoury
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ ls
+<span class="ansi1 ansi34">chamber</span> <span class="ansi1 ansi32">potion</span>  scroll <span class="ansi1 ansi32">treasure</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ ./treasure
+You have found a gleaming silver **sword**!  You marvel at
+its craftmanship, and you recall tales from your childhood
+of the great mystic king Rannismir who bore such a sword to
+protect the kingdom from undead.
+
+Add this item to your inventory:
+
+export I=sword,$I
+
+Remember, you can check your inventory:
+
+echo $I
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ claim sword
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ .cat scroll
+
+# You can interact with items in the room (they end with a *)
+# by running them as a command (a shell script).
+#
+# For example, to collect treasure:
+#
+# ./treasure
+#
+# The . (dot) means *don't move*, and the name of the
+# script makes the code run.  This is known as a
+# relative path, and the . means the current room
+# (directory).
+#
+# You may have left treasure in the previous room.
+# Go back to a previous directory with two dots,
+# which means *take a step back*.
+#
+# EXAMPLE:
+#
+# cd ..
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ ./potion
+You have found a potion bottle of swirling
+green liquid. Do you want to drink it?
+
+yes
+You weren't born yestermorn.  This potion is probably
+poison.
+
+Create a variable for your health points (HP).  You have
+10HP:
+
+export HP=10
+
+You can check your health at any time:
+
+echo $HP
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ hp  hp 10
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ cd chamber
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ls
+scroll <span class="ansi1 ansi32">spell</span> <span class="ansi1 ansi32">statue</span> <span class="ansi1 ansi32">treasure</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ./cat scroll
+
+# You seem to have reached the end of this hall.
+#
+# Turn back and try another path.
+#
+# Remember, to back track one directory, you type:
+#
+# cd ..
+#
+# If you are drawing a map of your progress,
+# you can always get the name of your working
+# directory with this command:
+#
+# pwd
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ./spell
+Runes, the language of the ancient mystics that once ruled
+this land, are inscribed upon the western wall.
+
+Do you want to read them? yes
+You decide it is probably best to leave magickal
+inscriptions as they are.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ./spell
+Runes, the language of the ancient mystics that once ruled
+this land, are inscribed upon the western wall.
+
+Do you want to read them? y
+You recall the lessons of Caitlyn the Green, who taught you
+these ancient letters.
+
+The runes are instructions on how to summon a portal that
+will allow you to walk through an invisible door contained
+in the wall.
+
+In Bash, a symbolic link (symlink) is a *shortcut* to
+another file or directory.  Create one from this room to the
+adjacent one:
+
+ln -fs ../../../portal
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ln -fs ../../../portal
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ls
+<span class="ansi1 ansi36">portal</span>  scroll <span class="ansi1 ansi32">spell</span> <span class="ansi1 ansi32">statue</span> <span class="ansi1 ansi32">treasure</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ./status
+bash: ./status: No such file or directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ./statuse
+A rugged statue stands in the corner of the room.
+
+Do you approach it? y
+The statue springs to life, rumbling:
+
+WHO DARES INTRUDE UPON THE CHAMBER OF SPIRITS?
+
+It thrusts a fist at you, hitting you for 5 damage.
+Deduct 5 from your HP variable:
+
+let "HP=HP-5"
+
+Do you have a sword? y
+You slay the statue!
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ls
+<span class="ansi1 ansi32">pieces</span> <span class="ansi1 ansi36">portal</span>  scroll <span class="ansi1 ansi32">spell</span> <span class="ansi1 ansi32">treasure</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ./pieces
+You sift through the pieces of a shattered statue.
+
+You find nothing of interest in the statue's remains.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ./traseasure
+
+You have found a stash of **diamonds**!  They are old and worn
+with age,  but they still gleam in the magickal light
+eminating from your eyes.
+
+Prefix this item to your inventory:
+
+export I=diamonds,$I
+
+Remember, you can check your inventory:
+
+echo $I
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ eclaim diamonds
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ls
+<span class="ansi1 ansi32">pieces</span> <span class="ansi1 ansi36">portal</span>  scroll <span class="ansi1 ansi32">spell</span> <span class="ansi1 ansi32">treasure</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ./portal    cd portal
+/chamber/portal<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber/portal</span>$ ls
+<span class="ansi1 ansi34">library</span> <span class="ansi1 ansi32">monster</span>
+/chamber/portal<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber/portal</span>$ ./monlibrary cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ls
+<span class="ansi1 ansi32">pieces</span> <span class="ansi1 ansi36">portal</span>  scroll <span class="ansi1 ansi32">spell</span> <span class="ansi1 ansi32">treasure</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master</span>$ cd entrance
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ ls
+<span class="ansi1 ansi34">cellar</span> <span class="ansi1 ansi34">chapel</span>  logs.txt  scrap  scroll <span class="ansi1 ansi34">vault</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel</span>$ ls
+<span class="ansi1 ansi32">altar</span> <span class="ansi1 ansi34">courtyard</span>  scroll
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel</span>$ cd./alrtar
+In the corner is a decaying old altar of some forgotten god.
+
+There is a small trinket on the ground.  It looks religious
+in nature.
+
+Do you want to put the trinket back on the altar? yes  
+You place the trinket upon the altar.  You feel a gentle
+breeze pass through the room.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel</span>$ ./altar
+In the corner is a decaying old altar of some forgotten god.
+
+There is a small trinket on the ground.  It looks religious
+in nature.
+
+Do you want to put the trinket back on the altar? y
+You place the trinket upon the altar.  You feel a gentle
+breeze pass through the room.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel</span>$ cat scroll
+
+# There is writing upon the wall.
+#
+# It is written in the common language of the land.
+#
+# It appears to be inscribed in blood:
+#
+#      T U R N    B A C K
+#
+# Speaking of turning back:
+#
+# You can re-use previous commands by pressing the
+# UP and DOWN arrow to scroll through your history.
+# Try it!
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel</span>$ ls
+<span class="ansi1 ansi32">altar</span> <span class="ansi1 ansi34">courtyard</span>  scroll
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel</span>$ cd courtyard
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard</span>$ ls
+<span class="ansi1 ansi34">aviary</span> <span class="ansi1 ansi32">fountain</span> <span class="ansi1 ansi32">rags</span>  scroll
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard</span>$ ./fountain
+Do you want to approach the fountain? yes
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard</span>$ y./fountain
+Do you want to approach the fountain? y
+The waters sparkle in the light of your gaze.  You feel
+drawn to it.
+
+But you suddenly feel strength to turn away.  You hear a
+sigh from the altar in the.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard</span>$ ./rags
+There's a pile of old **rags**.  They are old and worn with
+age, and probably fell off of some poor adventurer.
+
+Do you want to take the rags? ye 
+As you take the rags from the floor, you find a salted fish,
+probably from the rations of the former owner of these rags.
+Prefix these items to your inventory:
+
+export I=rags,fish,$I
+
+Remember, you can check your inventory"
+
+echo $I
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard</span>$ cat scroll
+
+There is a great fountain in the center of this courtyard.
+The waters are bright and clear in the magickal light
+eminating from your eyes.
+
+There were once plants growing here, but they are all
+dead and gnarled now.
+
+If you stand still here, you can hear the soft rippling
+of water, and even the occasional splash.
+
+Perhaps there are fish that yet live in the fountain?
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard</span>$ ls cd aviary
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary</span>$ ls
+<span class="ansi1 ansi32">crystal</span> <span class="ansi1 ansi34">hall</span> <span class="ansi1 ansi32">penguin</span>  scroll
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary</span>$ cd ./crystal
+A white crystal, forged by the Queen of Winter, on the
+frosty ground.
+
+You can prefix this item to your inventory:
+
+I=crystal,$I
+
+Remember, you can check your inventory:
+
+echo $I
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary</span>$ ./penguin
+One of the birds finally notices your presence.  It turns
+its head sideways, seemingly beckoning for you to come
+closer.
+
+Do you get closer? n
+You back away from the penguin carefully.  It loses interest
+in you and waddles away.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary</span>$ cd hall
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall</span>$ ls
+<span class="ansi1 ansi34">library</span> <span class="ansi1 ansi32">monster</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall</span>$ ./lbibrary
+bash: ./library: Is a directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall</span>$ cd lbiraibrary
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall/library</span>$ ls
+scroll <span class="ansi1 ansi32">tome</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall/library</span>$ ./tome
+
+You see a large tome on the table, open
+to a page in the middle of the book.
+
+Do you read it? y
+
+The tome appears to be a book of spells.  Here is the
+first spell:
+
+
+View the world in color!
+
+If you have a modern, color terminal, you can view the
+output of the ls command in color!  This will still be a
+valid command if you don't have a color terminal, you just
+won't see colors.  Try this:
+
+alias ls='ls -F --color=auto'
+
+Now when you run the "ls" command by itself, rooms
+(directories), scrolls (text files), and encounters
+(executable files) should each have different colors.
+Depending on the $LS_COLORS variable, many other files will
+have different colors too!
+
+You can read more about colors by consulting the
+"dircolors" manual.  To read more, type this spell:
+
+man dircolors
+
+In the manual, you can type 'q' (without quotes) to
+exit the manual page.
+
+Do you want to read another spell? ls -F --color=auto
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall/library</span>$ ls -F --color=auto
+scroll <span class="ansi1 ansi32">tome</span>*
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall/library</span>$ ls
+scroll <span class="ansi1 ansi32">tome</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall/library</span>$ hpexcho $hip
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall/library</span>$ echo $hpHP
+10
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall/library</span>$ cd ...
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall</span>$ ls
+<span class="ansi1 ansi34">library</span> <span class="ansi1 ansi32">monster</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall</span>$ ./monster
+A hulking three-legged beast, with a mouth full of fangs and
+a barbed tail and 8 arms, lumbers toward you.
+
+If you have a sword, you can attack.  Otherwise, you should
+run.
+
+Do you want to attack? y
+Enter a number:  92
+The monster rolled  31
+You rolled  58
+A hit! A palpable hit!  You have slain the beast.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall</span>$ cd ls
+<span class="ansi1 ansi32">carcass</span> <span class="ansi1 ansi34">library</span> <span class="ansi1 ansi32">treasure</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall</span>$ ./carcass
+You find the carcass of a foul beast.  Nothing of interest
+lies within its remains.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall</span>$ . carcass
+A hulking three-legged beast, with a mouth full of fangs and
+a barbed tail and 8 arms, lumbers toward you.
+
+If you have a sword, you can attack.  Otherwise, you should
+run.
+
+Do you want to attack? ^C
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall</span>$ ./treasure
+You have found a **crown**!  Add it to your inventory.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall</span>$ claim crown
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary/hall</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ ls
+<span class="ansi1 ansi34">cellar</span> <span class="ansi1 ansi34">chapel</span>  logs.txt  scrap  scroll <span class="ansi1 ansi34">vault</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd vault
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault</span>$ ls
+<span class="ansi1 ansi32">glass</span>  scroll <span class="ansi1 ansi34">stronghold</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault</span>$ ./grlass
+Do you have an ice crystal? y/n  y
+You sense that the glass shards are searching for something.
+Whatever it is, you cannot provide it now.
+
+Walk with care.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ ls
+<span class="ansi1 ansi34">cellar</span> <span class="ansi1 ansi34">chapel</span>  logs.txt  scrap  scroll <span class="ansi1 ansi34">vault</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel</span>$ cdls
+<span class="ansi1 ansi32">altar</span> <span class="ansi1 ansi34">courtyard</span>  scroll
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel</span>$ cd courtyard
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard</span>$ .ls
+<span class="ansi1 ansi34">aviary</span> <span class="ansi1 ansi32">fountain</span> <span class="ansi1 ansi32">rags</span>  scroll
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard</span>$ . cd aviaary
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary</span>$ ls
+<span class="ansi1 ansi32">crystal</span> <span class="ansi1 ansi34">hall</span> <span class="ansi1 ansi32">penguin</span>  scroll
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary</span>$ ./crystal
+A white crystal, forged by the Queen of Winter, on the
+frosty ground.
+
+You can prefix this item to your inventory:
+
+I=crystal,$I
+
+Remember, you can check your inventory:
+
+echo $I
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary</span>$ claim crystal
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard/aviary</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel/courtyard</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/chapel</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ ls
+<span class="ansi1 ansi34">cellar</span> <span class="ansi1 ansi34">chapel</span>  logs.txt  scrap  scroll <span class="ansi1 ansi34">vault</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd vault
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault</span>$ ls
+<span class="ansi1 ansi32">glass</span>  scroll <span class="ansi1 ansi34">stronghold</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault</span>$ ./glass
+Do you have an ice crystal? y/n  yes  
+You place the ice crystal among the shards of glass.  The
+sword in your hands becomes cold.  You feel the power of
+1000 blizzards coursing through it.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault</span>$ cd stronghold
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold</span>$ ls
+<span class="ansi1 ansi32">goblet</span> <span class="ansi1 ansi34">nursery</span>  orb1  scroll
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold</span>$ ./goblet
+You try to grasp the faintly glowing goblet, but it passes
+through your fingers.
+
+Are you stuck? Do you need a hint? y/n  y cp orb1 orb2
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold</span>$ ./gobletls./gobletcccp orb1 orb2
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold</span>$ cp orb1 orb23
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold</span>$ ls
+<span class="ansi1 ansi32">goblet</span> <span class="ansi1 ansi34">nursery</span>  orb1  orb2  orb3  scroll
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold</span>$ ./goble3tt
+You have freed the goblet's material form.  Add 'goblet' to
+your inventory.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold</span>$ claim goblet
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold</span>$ ls
+<span class="ansi1 ansi32">goblet</span> <span class="ansi1 ansi34">nursery</span>  orb1  orb2  orb3  scroll
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold</span>$ cd nrursery
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery</span>$ ls
+<span class="ansi1 ansi34">lab</span>  scroll <span class="ansi1 ansi32">spell</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery</span>$ ./spell
+A page from a druid's tome of incantations lies on the
+ground.  It reveals to you how to summon a healing potion:
+
+# To find a file on your system, use the find command.  For
+# example, to search this room:
+
+find . -name "potion"
+
+# Once you've found a potion, copy it to this directory and
+# run this spell script again.
+
+There are no potions in this room.  But try searching
+starting at the entrance.
+
+Hint: use pwd to determine how many rooms (folders) are
+between you and the entrance.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery</span>$ cd ....
+bash: cd: ....: No such file or directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery</span>$ cd ../..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault</span>$ c d ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ find . -name "potion"
+./cellar/armoury/potion
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd /armioury/potion
+bash: cd:/potion: Not a directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd/potion
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ /vault/stronghold/nursery
+bash: /vault/stronghold/nursery: No such file or directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd /vault/stronghold/nursery
+bash: cd: /vault/stronghold/nursery: No such file or directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd /vault/stronghold/nursery./vault/stronghold/nursery
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery</span>$ cp ./cellar/armoury/potion./cellar/armoury/potion./cellar/armoury/potion./cellar/armoury/potion/../cellar/armoury/potion/../cellar/armoury/potion./../cellar/armoury/potion./../cellar/armoury/potion
+cp: missing destination file operand after '../../../cellar/armoury/potion'
+Try 'cp --help' for more information.
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery</span>$ cp ../../../cellar/armoury/potion potisspell
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery</span>$ ls
+<span class="ansi1 ansi34">lab</span>  scroll <span class="ansi1 ansi32">spell</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery</span>$ ./spell
+You have found a potion bottle of swirling
+green liquid. Do you want to drink it?
+
+y
+The taste of a rustic green plant fills your mouth.  It
+warms and strengthens you.
+
+Create a variable for your health points (HP).  You have
+15HP:
+
+export HP=15
+
+You can check your health at any time:
+
+echo $HP
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery</span>$ cd ls
+<span class="ansi1 ansi34">lab</span>  scroll <span class="ansi1 ansi32">spell</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery</span>$ cd lab
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab</span>$ .ls
+<span class="ansi1 ansi32">ghost</span>  scroll
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab</span>$ ./gghost
+The room shakes, a gust of wind blasts you from nowhere.
+You sense that a presence has entered the room.  The pain
+you suddenly feel assures you that you are under attack by a
+ghostly entity!
+
+If you have a sword, you can attack.  Otherwise, you should
+run.
+
+Do you want to attack? y/n  y
+Enter a number:  929219
+The monster rolled  27
+You rolled  95
++2 bonus from a mysterious wintry patron!
+A hit! A palpable hit!  You have slain the spirit of the
+evil wizard.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab</span>$ ls
+<span class="ansi1 ansi32">ghost</span> <span class="ansi1 ansi32">platinum</span>  scroll <span class="ansi1 ansi32">treasure</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab</span>$ ./treasure
+You have found an *emerald*!  Add it to your inventory.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab</span>$ claim emerald
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab</span>$ claim platnuinum
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab</span>$ ls
+<span class="ansi1 ansi32">ghost</span> <span class="ansi1 ansi32">platinum</span>  scroll <span class="ansi1 ansi32">treasure</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab</span>$ echo $I
+platinum,emerald,goblet,crystal,crown,diamonds,sword,amulet,
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab</span>$ lscd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd .. ls
+<span class="ansi1 ansi34">cellar</span> <span class="ansi1 ansi34">chapel</span>  logs.txt  scrap  scroll <span class="ansi1 ansi34">vault</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cat scrap
+
+# Descend, bold traveller, into the dungeons of POSIX
+# which the shadow of Scartaris touches,
+# and you will learn the magickal incantations
+# of the Wildebeest.
+#
+# I have done this, in the place of the singing flame:
+#
+# ln -s ../../../../.rift portal
+#
+# [signed] Arnnisen the Gray
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ ls
+<span class="ansi1 ansi34">cellar</span> <span class="ansi1 ansi34">chapel</span>  logs.txt  scrap  scroll <span class="ansi1 ansi34">vault</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ tree
+<span class="ansi1 ansi34">.</span>
+├──<span class="ansi1 ansi34">cellar</span>
+│  ├──<span class="ansi1 ansi34">armoury</span>
+│  │  ├──<span class="ansi1 ansi34">chamber</span>
+│  │  │  ├──<span class="ansi1 ansi32">pieces</span>
+│  │  │  ├──<span class="ansi1 ansi36">portal</span> -&gt;<span class="ansi1 ansi34">../../../chapel/courtyard/aviary/hall</span>
+│  │  │  ├── scroll
+│  │  │  ├──<span class="ansi1 ansi32">spell</span>
+│  │  │  └──<span class="ansi1 ansi32">treasure</span>
+│  │  ├──<span class="ansi1 ansi32">potion</span>
+│  │  ├── scroll
+│  │  └──<span class="ansi1 ansi32">treasure</span>
+│  ├── scroll
+│  └──<span class="ansi1 ansi32">treasure</span>
+├──<span class="ansi1 ansi34">chapel</span>
+│  ├──<span class="ansi1 ansi32">altar</span>
+│  ├──<span class="ansi1 ansi34">courtyard</span>
+│  │  ├──<span class="ansi1 ansi34">aviary</span>
+│  │  │  ├──<span class="ansi1 ansi32">crystal</span>
+│  │  │  ├──<span class="ansi1 ansi34">hall</span>
+│  │  │  │  ├──<span class="ansi1 ansi32">carcass</span>
+│  │  │  │  ├──<span class="ansi1 ansi34">library</span>
+│  │  │  │  │  ├── scroll
+│  │  │  │  │  └──<span class="ansi1 ansi32">tome</span>
+│  │  │  │  └──<span class="ansi1 ansi32">treasure</span>
+│  │  │  ├──<span class="ansi1 ansi32">penguin</span>
+│  │  │  └── scroll
+│  │  ├──<span class="ansi1 ansi32">fountain</span>
+│  │  ├──<span class="ansi1 ansi32">rags</span>
+│  │  └── scroll
+│  └── scroll
+├── logs.txt
+├── scrap
+├── scroll
+└──<span class="ansi1 ansi34">vault</span>
+    ├──<span class="ansi1 ansi32">glass</span>
+    ├── scroll
+    └──<span class="ansi1 ansi34">stronghold</span>
+        ├──<span class="ansi1 ansi32">goblet</span>
+        ├──<span class="ansi1 ansi34">nursery</span>
+        │  ├──<span class="ansi1 ansi34">lab</span>
+        │  │  ├──<span class="ansi1 ansi32">ghost</span>
+        │  │  ├──<span class="ansi1 ansi32">platinum</span>
+        │  │  ├── scroll
+        │  │  └──<span class="ansi1 ansi32">treasure</span>
+        │  ├── scroll
+        │  └──<span class="ansi1 ansi32">spell</span>
+        ├── orb1
+        ├── orb2
+        ├── orb3
+        └── scroll
+
+13 directories, 37 files
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd labvault
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault</span>$ cd stronhhfghold
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold</span>$ cd nursetry
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery</span>$ cd lab
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab</span>$ ln -s ../../../../.rift portal
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab</span>$ c ls
+<span class="ansi1 ansi32">ghost</span> <span class="ansi1 ansi32">platinum</span> <span class="ansi1 ansi36">portal</span>  scroll <span class="ansi1 ansi32">treasure</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab</span>$ cat scroll
+
+# An abandoned laboratory of a wizard long dead.
+#
+# A lone magickal torch ignites as you enter, shedding
+# light on the workshop, and casts haunting shadows
+# on every surface.
+#
+# The flames lick the walls, burning off the moss that had
+# gathered there. The burning moss sizzles in the silence
+# of the catacombs, like angelic wailing or singing.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab</span>$ cd portal
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal</span>$ ls
+<span class="ansi1 ansi34">arena</span> <span class="ansi1 ansi32">box</span>  scroll <span class="ansi1 ansi34">spire</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal</span>$ ./box
+A metal box sits upon the ground.  It appears to be
+illuminated from within.  There is a window in the box. The
+window is black, but there is luminescent writing.
+
+Do you want to read the writing? y
+
+.--------------------------------,
+|       Welcome to POSIX         |
+|   Enter your username:         |
+'--------------------------------'
+wvonh gphanith3
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal</span>$ ./box
+A metal box sits upon the ground.  It appears to be
+illuminated from within.  There is a window in the box. The
+window is black, but there is luminescent writing.
+
+Do you want to read the writing? y
+
+.--------------------------------,
+|       Welcome to POSIX         |
+|   Enter your username:         |
+'--------------------------------'
+wvnh gp  og   ongphanith30
+You feel magic in the air.
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal</span>$ ls
+<span class="ansi1 ansi34">arena</span> <span class="ansi1 ansi32">armour</span> <span class="ansi1 ansi32">box</span>  scroll <span class="ansi1 ansi34">spire</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal</span>$ ./armour
+Welcome, wvongphanith30, to your POSIX system.  You have learnt much,
+and now you have the basic knowledge you need to become a
+truly powerful wizard.
+
+You have found magickal armour.  Add it to your inventory.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal</span>$ claim armour
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal</span>$ ls
+<span class="ansi1 ansi34">arena</span> <span class="ansi1 ansi32">armour</span> <span class="ansi1 ansi32">box</span>  scroll <span class="ansi1 ansi34">spire</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal</span>$ ./cd spire
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/spire</span>$ ls
+<span class="ansi1 ansi34">mezzanine</span>  scroll
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/spire</span>$ cd mezzanine
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/spire/mezzanine</span>$ cd ls
+<span class="ansi1 ansi32">button</span>  window
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/spire/mezzanine</span>$ ./button
+You see a glowing red button with what appears to be an
+arrow pointing up inscribed on its face.
+
+Are you tempted to press the button?  y/n  y
+The doors slide open, revealing a small chamber.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/spire/mezzanine</span>$ cd door
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/spire/mezzanine/door</span>$ ./display
+You hear a slight whirring, and feel a heaviness at your
+feet, with a vague, disquieting sense of motion.
+
+A magickal display reads:
+
+666
+The doors slide open, with nothing but darkness beyond.
+
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/spire/mezzanine/door</span>$ ls
+<span class="ansi1 ansi32">display</span> <span class="ansi1 ansi36">door</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/spire/mezzanine/door</span>$ cd door
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/.rift/spire/mezzanine/.elevator/.satellite</span>$ ls
+alpha  beta <span class="ansi1 ansi32">button</span>  delta  gamma  notebook  sha256sums
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/.rift/spire/mezzanine/.elevator/.satellite</span>$ The doors slide closed.
+cat notebook
+This is the notebook of Thraal, Artificer of the Kingdom of
+Nor.  I have been studying the machines that lie in this
+Satellite.  I have a way to combine the parts to form a
+golem, a *robot*, using the same incantation that I use to
+view signs and scrolls in my home world.  I have discovered
+that in order to bring the robot to life I must utter the
+following spell:
+
+    chmod +x robot
+
+I have labeled the four parts alpha, beta, gamma, delta,
+but that is not the order I must combine them.  I must
+pass the combined parts into another spell which I will
+document below.  The first incantation I tried was thus:
+
+    cat alpha beta gamma delta | base64 -d &gt; robot
+
+...but that was met with the following error:
+
+    base64:  invalid input
+
+I have noticed that not every order thus will produce
+the same error, but the resulting robot still does not
+work.  I discovered another incantation that will tell
+me the robot is assembled correctly:
+
+    sha256sum -c sha256sums
+
+I will attempt every combination and document the one
+that succeeds.
+
+    alpha beta delta gamma
+    alpha delta bet
+
+There appears to be dried blood on the notebook, and the
+rest of the pages are blank.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/.rift/spire/mezzanine/.elevator/.satellite</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/.rift/spire/mezzanine/.elevator</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/.rift/spire/mezzanine</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/.rift/spire</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/.rift</span>$ ;sls
+<span class="ansi1 ansi34">arena</span> <span class="ansi1 ansi32">armour</span> <span class="ansi1 ansi32">box</span>  scroll <span class="ansi1 ansi34">spire</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/.rift</span>$ cd arena
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/.rift/arena</span>$ ls
+<span class="ansi1 ansi34">pit</span>  scroll
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/.rift/arena</span>$ cat scroll
+
+ .:|  T H E C H A M B E R O F  |:.
+.:||  N Y A R L A T H O T E P  ||:.
+-----------------------------------
+| /                             \ |
+| |                             | |
+|||                             |||
+|||                             |||
+|||                             |||
+|||                             |||
+|||                             |||
+|||                             |||
+||| __________________________  |||
+|||/''''                   ''''\|||
+-----------------------------------
+
+# You have entered an ancient arena,
+# probably used for worship.
+#
+# And "worship", in this dangerous realm,
+# usually means blood sport.
+#
+# There is a gaping pit in the center
+# of the arena.
+#
+# If you remember how to summon a potion,
+# this might be a good time to do it.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/.rift/arena</span>$ cd  cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/.rift</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ ls
+<span class="ansi1 ansi34">cellar</span> <span class="ansi1 ansi34">chapel</span>  logs.txt  scrap  scroll <span class="ansi1 ansi34">vault</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ find . "spell"
+.
+./chapel
+./chapel/.bless
+./chapel/scroll
+./chapel/altar
+./chapel/courtyard
+./chapel/courtyard/fountain
+./chapel/courtyard/scroll
+./chapel/courtyard/rags
+./chapel/courtyard/aviary
+./chapel/courtyard/aviary/hall
+./chapel/courtyard/aviary/hall/treasure
+./chapel/courtyard/aviary/hall/library
+./chapel/courtyard/aviary/hall/library/scroll
+./chapel/courtyard/aviary/hall/library/tome
+./chapel/courtyard/aviary/hall/carcass
+./chapel/courtyard/aviary/scroll
+./chapel/courtyard/aviary/crystal
+./chapel/courtyard/aviary/penguin
+./scrap
+./scroll
+./logs.txt
+./cellar
+./cellar/armoury
+./cellar/armoury/treasure
+./cellar/armoury/scroll
+./cellar/armoury/chamber
+./cellar/armoury/chamber/portal
+./cellar/armoury/chamber/treasure
+./cellar/armoury/chamber/scroll
+./cellar/armoury/chamber/pieces
+./cellar/armoury/chamber/spell
+./cellar/armoury/potion
+./cellar/treasure
+./cellar/scroll
+./vault
+./vault/stronghold
+./vault/stronghold/nursery
+./vault/stronghold/nursery/lab
+./vault/stronghold/nursery/lab/portal
+./vault/stronghold/nursery/lab/ghost
+./vault/stronghold/nursery/lab/platinum
+./vault/stronghold/nursery/lab/treasure
+./vault/stronghold/nursery/lab/scroll
+./vault/stronghold/nursery/scroll
+./vault/stronghold/nursery/spell
+./vault/stronghold/goblet
+./vault/stronghold/scroll
+./vault/stronghold/orb3
+./vault/stronghold/orb2
+./vault/stronghold/orb1
+./vault/.bless
+./vault/scroll
+./vault/glass
+./.rift
+./.rift/spire
+./.rift/spire/scroll
+./.rift/spire/mezzanine
+./.rift/spire/mezzanine/button
+./.rift/spire/mezzanine/window
+./.rift/spire/mezzanine/.elevator
+./.rift/spire/mezzanine/.elevator/display
+./.rift/spire/mezzanine/.elevator/.direction
+./.rift/spire/mezzanine/.elevator/.satellite
+./.rift/spire/mezzanine/.elevator/.satellite/button
+./.rift/spire/mezzanine/.elevator/.satellite/notebook
+./.rift/spire/mezzanine/.elevator/.satellite/alpha
+./.rift/spire/mezzanine/.elevator/.satellite/gamma
+./.rift/spire/mezzanine/.elevator/.satellite/beta
+./.rift/spire/mezzanine/.elevator/.satellite/sha256sums
+./.rift/spire/mezzanine/.elevator/.satellite/delta
+./.rift/arena
+./.rift/arena/pit
+./.rift/arena/pit/drummer
+./.rift/arena/pit/drum
+./.rift/arena/pit/scroll
+./.rift/arena/pit/wizard-light
+./.rift/arena/pit/nyarlathotep
+./.rift/arena/scroll
+./.rift/.bless
+./.rift/scroll
+./.rift/box
+./.rift/armour
+./.rift/.armour
+find: â€˜spellâ€™: No such file or directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ find . "spell"n"spell"a"spell"m"spell"e"spell" "spell"
+.
+./chapel
+./chapel/.bless
+./chapel/scroll
+./chapel/altar
+./chapel/courtyard
+./chapel/courtyard/fountain
+./chapel/courtyard/scroll
+./chapel/courtyard/rags
+./chapel/courtyard/aviary
+./chapel/courtyard/aviary/hall
+./chapel/courtyard/aviary/hall/treasure
+./chapel/courtyard/aviary/hall/library
+./chapel/courtyard/aviary/hall/library/scroll
+./chapel/courtyard/aviary/hall/library/tome
+./chapel/courtyard/aviary/hall/carcass
+./chapel/courtyard/aviary/scroll
+./chapel/courtyard/aviary/crystal
+./chapel/courtyard/aviary/penguin
+./scrap
+./scroll
+./logs.txt
+./cellar
+./cellar/armoury
+./cellar/armoury/treasure
+./cellar/armoury/scroll
+./cellar/armoury/chamber
+./cellar/armoury/chamber/portal
+./cellar/armoury/chamber/treasure
+./cellar/armoury/chamber/scroll
+./cellar/armoury/chamber/pieces
+./cellar/armoury/chamber/spell
+./cellar/armoury/potion
+./cellar/treasure
+./cellar/scroll
+./vault
+./vault/stronghold
+./vault/stronghold/nursery
+./vault/stronghold/nursery/lab
+./vault/stronghold/nursery/lab/portal
+./vault/stronghold/nursery/lab/ghost
+./vault/stronghold/nursery/lab/platinum
+./vault/stronghold/nursery/lab/treasure
+./vault/stronghold/nursery/lab/scroll
+./vault/stronghold/nursery/scroll
+./vault/stronghold/nursery/spell
+./vault/stronghold/goblet
+./vault/stronghold/scroll
+./vault/stronghold/orb3
+./vault/stronghold/orb2
+./vault/stronghold/orb1
+./vault/.bless
+./vault/scroll
+./vault/glass
+./.rift
+./.rift/spire
+./.rift/spire/scroll
+./.rift/spire/mezzanine
+./.rift/spire/mezzanine/button
+./.rift/spire/mezzanine/window
+./.rift/spire/mezzanine/.elevator
+./.rift/spire/mezzanine/.elevator/display
+./.rift/spire/mezzanine/.elevator/.direction
+./.rift/spire/mezzanine/.elevator/.satellite
+./.rift/spire/mezzanine/.elevator/.satellite/button
+./.rift/spire/mezzanine/.elevator/.satellite/notebook
+./.rift/spire/mezzanine/.elevator/.satellite/alpha
+./.rift/spire/mezzanine/.elevator/.satellite/gamma
+./.rift/spire/mezzanine/.elevator/.satellite/beta
+./.rift/spire/mezzanine/.elevator/.satellite/sha256sums
+./.rift/spire/mezzanine/.elevator/.satellite/delta
+./.rift/arena
+./.rift/arena/pit
+./.rift/arena/pit/drummer
+./.rift/arena/pit/drum
+./.rift/arena/pit/scroll
+./.rift/arena/pit/wizard-light
+./.rift/arena/pit/nyarlathotep
+./.rift/arena/scroll
+./.rift/.bless
+./.rift/scroll
+./.rift/box
+./.rift/armour
+./.rift/.armour
+find: 'name': No such file or directory
+find: 'spell': No such file or directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ find . -name "potion"
+./cellar/armoury/potion
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ find . -name "potion"""""""s"p"e"l"l"
+./cellar/armoury/chamber/spell
+./vault/stronghold/nursery/spell
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd ./cellar/armoury/chamber/spell
+bash: cd: ./cellar/armoury/chamber/spell: Not a directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd ./cellar/armoury/chamber/spell
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ls
+<span class="ansi1 ansi32">pieces</span> <span class="ansi1 ansi36">portal</span>  scroll <span class="ansi1 ansi32">spell</span> <span class="ansi1 ansi32">treasure</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ ./spell
+Runes, the language of the ancient mystics that once ruled
+this land, are inscribed upon the western wall.
+
+Do you want to read them? y
+You recall the lessons of Caitlyn the Green, who taught you
+these ancient letters.
+
+The runes are instructions on how to summon a portal that
+will allow you to walk through an invisible door contained
+in the wall.
+
+In Bash, a symbolic link (symlink) is a *shortcut* to
+another file or directory.  Create one from this room to the
+adjacent one:
+
+ln -fs ../../../portal
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury/chamber</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar</span>$ cd. ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd . cd ./cellar/armoury/potion
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ cd .rift
+bash: cd: .rift: No such file or directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ cd .riftrift
+bash: cd: rift: No such file or directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ cd armoury
+bash: cd: armoury: No such file or directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ cd vault
+bash: cd: vault: No such file or directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ cd stronghold
+bash: cd: stronghold: No such file or directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ cd nursery
+bash: cd: nursery: No such file or directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ cd klallab
+bash: cd: lab: No such file or directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar/armoury</span>$ cd labstr..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/cellar</span>$ .cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd ..labnurserystrongholdvault
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault</span>$ cd vault..labnurserystronghold
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold</span>$ cd strongholdvault..labnursery
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery</span>$ cd nurserystrongholdvault..lab
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab</span>$ ls
+<span class="ansi1 ansi32">ghost</span> <span class="ansi1 ansi32">platinum</span> <span class="ansi1 ansi36">portal</span>  scroll <span class="ansi1 ansi32">treasure</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab</span>$ cd portal
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal</span>$ cd ..sarena
+ vault/stronghold/nursery/lab/portal/arena<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena</span>$ ls
+<span class="ansi1 ansi34">pit</span>  scroll
+ vault/stronghold/nursery/lab/portal/arena<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena</span>$ cd pit
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ ls
+drum <span class="ansi1 ansi32">drummer</span> <span class="ansi1 ansi32">nyarlathotep</span>  scroll <span class="ansi1 ansi32">wizard-light</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ .cat drum
+
+#
+# You can hear drumming in the distance.
+#
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ ./drummer
+War drums pound in the distance, giving Nyarlathotep
+strength.
+
+If you know a spell to un-summon the drums, Nyarlathotep
+would probably weaken!  Look up the "mv" or "rm" command.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ rm drummer
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ ls
+drum <span class="ansi1 ansi32">nyarlathotep</span>  scroll <span class="ansi1 ansi32">wizard-light</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ rm drums
+rm: cannot remove 'drums': No such file or directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ rm drums
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ ls
+<span class="ansi1 ansi32">nyarlathotep</span>  scroll <span class="ansi1 ansi32">wizard-light</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ ./wizard-light
+You feel a presence.  It's probably just your imagination.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ ls
+<span class="ansi1 ansi32">nyarlathotep</span>  scroll <span class="ansi1 ansi32">wizard-dark</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ cd./wizard0dar-dark
+The ancient wizard, Arnnisen the Gray, takes form before
+your very eyes. You have freed him, and now he fights by
+your side against the crawling chaos!
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ ls
+<span class="ansi1 ansi32">nyarlathotep</span>  scroll <span class="ansi1 ansi32">wizard-dark</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ ./nayarlathothep
+In the blink of an eye, Nyarlathotep is standing before you.
+From its hands emanate black necrotic rays, and your mind
+screams.
+
+Are you armed? y/n  y
+Enter a number.
+2929
+The monster rolled  29
+You rolled  13
++2 POSIX wizard bonus!
+Your sword swings harmlessly through the air.  You take 10
+points damage from your foe. Deduct this from your HP.
+
+let "HP=HP-10"
+
+The elder god of chaos consumes your body and soul.  You
+have been slain.
+
+GAME OVER!
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd /vault/stronghold/nursery/lab/portal/arena/pit
+bash: cd: /vault/stronghold/nursery/lab/portal/arena/pit: No such file or directory
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd /vault/stronghold/nursery/lab/portal/arena/pit./vault/stronghold/nursery/lab/portal/arena/pit
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ ls
+corpse <span class="ansi1 ansi32">nyarlathotep</span>  scroll <span class="ansi1 ansi32">wizard-dark</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ .cat croorpse
+You see the corpse of a slain adventurer on the floor of the
+dungeon.  You find the following items on the corpse:
+
+armour,platinum,emerald,goblet,crystal,crown,diamonds,sword,amulet,
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ claim armour,platinum,emerald,goblet,crystal,crown,diamonds,sword,amulet
+claim: command not found
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ cd .../../../../../..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd ..
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master</span>$ .. commands.sh
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master</span>$ cd entrance
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance</span>$ cd entrance. commands.shcd ../../../../../..laim armour,platinum,emerald,goblet,crystal,crown,diamonds,sword,amulet
+at corpselscd ./vault/stronghold/nursery/lab/portal/arena/pit
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ ls
+corpse <span class="ansi1 ansi32">nyarlathotep</span>  scroll <span class="ansi1 ansi32">wizard-dark</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ echo $I
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ claim armour,platinum,emerald,goblet,crystal,crown,diamonds,sword,amulet
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ claim armour,platinum,emerald,goblet,crystal,crown,diamonds,sword,amuletecho $I
+armour,platinum,emerald,goblet,crystal,crown,diamonds,sword,amulet,
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ ./hp 15
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ ./nyarlathotep
+In the blink of an eye, Nyarlathotep is standing before you.
+From its hands emanate black necrotic rays, and your mind
+screams.
+
+Are you armed? y/n  y
+Enter a number.
+92
+The monster rolled  59
+You rolled  28
++2 POSIX wizard bonus!
+Your sword swings harmlessly through the air.  You take 10
+points damage from your foe. Deduct this from your HP.
+
+let "HP=HP-10"
+
+Enter a number.
+www   24
+The monster rolled  27
+You rolled  64
++2 POSIX wizard bonus!
+A hit! A palpable hit!  You have vanquished the elder god of
+chaos!
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ hp
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ echo $HP
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ hp 155
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ ls
+corpse  end <span class="ansi1 ansi32">nyarlathotep</span> <span class="ansi1 ansi32">platinum</span>  scroll <span class="ansi1 ansi32">treasure</span> <span class="ansi1 ansi32">wizard-dark</span>
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ ./platinum
+You have found an enchanted *bracelet* of chaotic
+necromancy!  Add it to your inventory.
+
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ claim bracelet
+<span class="ansi1 ansi32">wvongphanith30@moe</span>:<span class="ansi1 ansi34">~/bashcrawl-master/entrance/vault/stronghold/nursery/lab/portal/arena/pit</span>$ claim plat[
+</pre>
+</body>
+
+</html>
